@@ -1,0 +1,212 @@
+html {
+    scroll-behavior: smooth;
+  }
+  body{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:roboto,helvetica,arial;
+    display:block;
+    position:relative;
+  }
+  header{
+    position:fixed;
+    top:0;
+    z-index:100;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-between;
+  }
+  #header{
+    width:100%; background-color:#85CDD0;
+    filter:drop-shadow(0px 5px 10px #087C79);
+  }
+  #logo{
+    display:flex;
+  }
+  #header-img{
+    height:60px;
+    width:60px;
+    display:block;
+    margin:auto 10px;
+    border-radius:10px;
+    border:1px solid #6AA2BB;
+    box-shadow: 4px 6px 5px #6AA2BB;
+  }
+  h1{
+    color:#087C79;
+    font-size:2em;
+    padding-top:5px;
+  }
+  nav{
+    margin:auto 10px;
+  }
+  nav ul{
+    display:flex;
+    flex-direction:row;
+    list-style:none;
+    padding-right:40px;
+  }
+  .nav-link{
+    margin-left:40px;
+    text-decoration:none;
+    text-align:center;
+    color:#087C79;
+    padding:5px;
+  }
+  .nav-link:hover{
+    color:#85CDD0;
+    background-color:#087C79;
+    border-radius:10px;
+    border:1px solid #6AA2BB;
+    box-shadow: 4px 6px 5px #6AA2BB;
+  transition-property:color,box-shadow;
+    transition-duration:0.7s;
+  }
+  main{
+    display:flex;
+    flex-direction:column;
+  }
+  #main-doc{
+    margin-top:84px;
+    width:100%;
+  }
+  #intro-section{
+    height:80vh;
+    background-image:url("https://cdn.shopify.com/s/files/1/1994/3097/products/m60a2_939x587.png?v=1602004547");
+    background-size: cover;
+    padding:80px;
+    color:#FFC300;
+    font-size:1.7em;
+    text-shadow: 1px 2px 3px black;
+  }
+  #Products{
+    background-color:#85CDD0;
+  }
+  #product-container{
+    padding:40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fill,350px);
+    gap:40px;
+    grid-auto-rows:250px;
+    justify-content:center;
+  }
+  .product-items{
+    border-radius:10px;
+    background-color:#087C79;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+  }
+  #product-img{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  img{
+    border-radius:10px;
+    height:150px;
+    width:300px;
+  }
+  .product-items p{
+    color:#85CDD0;
+  }
+  .product-items a{
+    padding:5px;
+    margin:10px 30px;
+    text-decoration:none;
+  background-color:#FFC300;
+    border-radius:10px;
+    color:#087C79;
+  }
+  .product-items a:hover{
+    background-color:#C23736;
+    color:#FFC300;
+    transition-property:background-color,color;
+    transition-duration:0.3s;
+  }
+  #Contact{
+    background-color:#087C79;
+    height:400px;
+    display:flex;
+    justify-content:center;
+  }
+  #form{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin:15px;
+    border-radius:10px;
+  }
+  #form p{
+    margin:-100px 50px 30px 50px;
+    padding:10px 0px;
+    font-size:2em;
+    color:#85CDD0;
+  }
+  #email{
+    margin:15px 50px;
+    background-color:#85CDD0;
+    padding:5px;
+    border:2px solid #85CDD0;
+    border-radius:5px;
+  }
+  #submit{
+    margin:0px auto;   background-color:#087C79;
+    color:#FFC300;
+    padding:5px 20px;
+    border:2px solid #FFC300;
+    border-radius:5px;
+  }
+  #submit:hover{
+    color:#087C79;background-color:#ffc300;
+    transition-property:background-color,color;
+    transition-duration:0.3s;
+  }
+  #About_us{
+    color:#087C79;
+    background-color:#85CDD0;
+    display:flex;
+    flex-flow:column wrap;
+    padding-bottom:100px;
+  }
+  #About_us-title{
+    padding:10px;
+    font-size:2em;
+    text-align:Center;
+  }
+  #About_us-text{
+    margin-top:-30px;
+    padding:10px 20px;
+    font-size:1.3em;
+    text-align:justify;
+  }
+  #video{
+    margin:auto;
+  }
+  footer{
+    position:absolute;
+    bottom:0;
+    display:flex;
+    justify-content:space-between;
+    text-align:center;
+    width:100%;
+    background-color:#087C79;
+  }
+  footer a{
+    padding:10px;
+    text-decoration:none;
+    color:#85CDD0;
+  }
+  footer p{
+    padding-left:10px;
+    font-size:10px;
+  }
+  @media screen and (max-width:800px){
+    header{
+      flex-flow: wrap;
+      justify-content:center;
+    }
+  }

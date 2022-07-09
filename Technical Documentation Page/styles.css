@@ -1,0 +1,109 @@
+body{
+  display:block;
+  font-family:helvetica,arial,sans-serif;
+  font-size:1.1em;
+  background-color:#556;
+  background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+  linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+  linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+  linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+  linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a),
+  linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+  background-size:80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}
+#navbar{
+  position:fixed;
+  top:0;
+  left:0;
+  height:100%;
+  min-width:270px;
+  background-color:#445e;
+}
+nav{
+  display:block;
+}
+nav ul{
+  display:flex;
+  flex-direction:column;
+  list-style:none;
+  justify-content:center;
+  margin-right:40px;
+}
+
+nav li{
+  padding:10px;
+  text-align:center;
+}
+#nav-header{
+  font-size:1.7em;
+  padding-top:20px;
+  text-align:center;
+}
+a{
+  text-decoration:none;
+  color:black;
+}
+a:hover{
+  text-decoration:none;
+  color:#99a;
+  text-shadow: 1px 2px 3px black;
+  font-size:1.1em;
+  transition-property:font-size;
+  transition-duration:0.3s;
+}
+#main-doc{
+  position:absolute;
+  top:0;
+  left:270px;
+}
+main{
+  display:block;
+}
+section{
+  margin:10px 10px 0px 10px;
+  background-color: #99aa;
+  border-radius:6px;
+  text-align:justify;
+  padding:20px;
+}
+header{
+  padding:10px;
+  font-size:1.5em;
+  background-color:#445a;
+  border-radius:6px;
+}
+h1{
+  text-align:center;
+  font-size:2em;
+}
+img{
+  width: 80%;
+  margin:25px auto;
+  display: block;
+}
+code{
+  background-color:#99ad;
+  border-radius:2px;
+}
+@media screen and (max-width:800px){
+
+  #main-doc{
+    position:relative;
+    margin-top:290px;
+    left:0;
+  }
+  #navbar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-height: 280px;
+  }
+  nav ul{
+    display:flex;
+    flex-direction:column;
+    list-style:none;
+    justify-content:center;
+  }
+  
+}

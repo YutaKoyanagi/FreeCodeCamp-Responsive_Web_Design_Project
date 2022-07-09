@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head><link rel="stylesheet" href="styles.css"></head>
+  <body>
+    <main>
+      <h1 id="title">Formulario de Encuesta</h1>
+      <p id="description">Este es un formulario para la recopilación de datos estadisticos. Por favor completar cada uno de los campos a continuación:</p>
+      <form id="survey-form">
+        <label id="name-label" type="name">Nombre</label>
+        <input id="name" type="text" placeholder="Ingrese nombre"required>
+        <label id="email-label" type="email">Email</label>
+        <input id="email" type="email" placeholder="Ingrese email" required>
+        <label id="number-label" type="number">Número</label>
+        <input id="number" type="number" min="0" max="100" placeholder="0-100"required>
+        <p id="select-text">Cuantas dosis de vacunas tiene aplicado hasta la fecha?</p>
+        <select id="dropdown"required>
+          <option value="1">Uno</option>
+          <option value="2">Dos</option>
+          <option value="3">Tres</option>
+          <option value="0">Ninguna</option>
+        </select>
+        <p id="radio-text">Alguna vez tuvo algún sintoma asociado al COVID19?
+        <div id="radio-container">
+          <label>
+            <input name="covid-record"type="radio" value="si"checked>Si
+          </label>
+          <label>
+            <input name="covid-record"type="radio" value="no">No
+          </label>
+        </div>
+        <p id="checkbox-text">Tiene algún antecedente de:</p>
+        <div id="checkbox-container">
+          <label>
+            <input name="danger-record" type="checkbox" value="problemaspulmonares">Problemas Pulmonares</label>
+          <label>
+            <input name="danger-record" type="checkbox" value="cardiopatía">Cardiopatía</label>
+          <label>
+            <input name="danger-record" type="checkbox" value="diabetes">Diabetes</label>
+          <label>
+            <input name="danger-record" type="checkbox" value="cancer">Cáncer</label>        
+        </div>
+        <p id="textarea-text">Comentarios</p>
+        <textarea placeholder="Dejanos algún comentario...">
+        </textarea>
+        <button
+type="submit" id="submit">Enviar Formulario</button>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header id="nav-header">Fading a LED</header>
+      <ul>
+        <li><a class="nav-link" href="#Hardware_required">Hardware required</a></li>
+        <li><a class="nav-link" href="#Circuit">Circuit</a></li>
+        <li><a class="nav-link" href="#Schematic">Schematic</a></li>
+        <li><a class="nav-link" href="#Code">Code</a></li>
+        <li><a class="nav-link" href="#Learn_more">Learn more</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="Intro-section" id="Intro">
+        <h1>Fading a LED</h1>
+        <p>This example demonstrates the use of the analogWrite() function in fading an LED off and on. AnalogWrite uses pulse width modulation (PWM), turning a digital pin on and off very quickly with different ratio between on and off, to create a fading effect.</p>
+      </section>
+      <section class="main-section" id="Hardware_required">
+        <header>Hardware required</header>
+        <ul>
+          <li>Arduino board</li>
+          <li>LED</li>
+          <li>220 ohm resistor</li>
+          <li>hook-up wires</li>
+          <li>breadboard</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Circuit">
+        <header>Circuit</header>
+        <p>Connect the <b>anode</b> (the longer, positive leg) of your LED to digital output pin 9 on your board through a 220 ohm resistor.</p><p>Connect the cathode (the shorter, negative leg) directly to ground.</p>
+        <img src="https://docs.arduino.cc/static/d64f7f76fc5ba2668a1684d1d7583207/4ef49/simplefade_bb.png">
+      </section>
+      <section class="main-section" id="Schematic">
+        <header>Schematic</header>
+        <img src="https://docs.arduino.cc/static/de42b3d398cf40768c13508932428fdb/4ef49/simplefade_pin9_schem.png">
+      </section>
+      <section class="main-section" id="Code">
+        <header>Code</header>
+        <p>After declaring pin 9 to be your <code>ledPin</code>, there is nothing to do in the <code>setup()</code> function of your code.</p>
+        <p>The <code>analogWrite()</code> function that you will be using in the main loop of your code requires two arguments: One telling the function which pin to write to, and one indicating what PWM value to write.</p>
+        <p>In order to fade your LED off and on, gradually increase your PWM value from 0 (all the way off) to 255 (all the way on), and then back to 0 once again to complete the cycle. In the sketch below, the PWM value is set using a variable called <code>brightness</code>. Each time through the loop, it increases by the value of the variable <code>fadeAmount</code>.</p>
+        <p>If <code>brightness</code> is at either extreme of its value (either 0 or 255), then <code>fadeAmount</code> is changed to its negative. In other words, if <code>fadeAmount</code> is 5, then it is set to -5. If it's -5, then it's set to 5. The next time through the loop, this change causes <code>brightness</code> to change direction as well.</p>
+        <p><code>analogWrite()</code> can change the PWM value very fast, so the delay at the end of the sketch controls the speed of the fade. Try changing the value of the delay and see how it changes the fading effect.</p>
+      </section>
+      <section class="main-section" id="Learn_more">
+        <header>Learn more</header>
+        <p>You can find more basic tutorials in the built-in examples section.</p>
+        <p>You can also explore the language reference, a detailed collection of the Arduino programming language.</p>
+        <p>Last revision 2015/07/29 by SM</p>
+      </section>
+    </main>
+  </body>
+</html>

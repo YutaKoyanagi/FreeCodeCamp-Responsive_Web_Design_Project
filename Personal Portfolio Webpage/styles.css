@@ -1,0 +1,241 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  text-decoration:none;
+}
+:root{
+  --main-color:#523874;
+  --main-2color:#916cad;
+  --second-color:#adf182;
+  --second-2color:#c7fba5;
+  --third-color:#dc7d68;
+}
+html{
+  scroll-behavior:smooth;
+}
+body{
+  font-family:roboto,helvetica,arial;
+}
+nav{
+  position:fixed;
+  top:0;
+  left:0;
+  height:100%;
+  width:80px;
+  background-color:var(--main-color);
+  z-index:100;
+}
+#navbar{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+}
+ul{
+  list-style:none;
+  display:flex;
+  margin:auto 0px;
+  transform: rotate(270deg);
+}
+#nav-link{
+  color:var(--main-2color);
+  padding:0px 20px 28px 20px;
+}
+#nav-link:hover{
+  color:var(--third-color);
+  border-bottom:3px solid var(--second-color);
+  transition-property:border-bottom;
+  transition-duration:0.25s;
+}
+#logo{
+  font-size:2em;
+  color:var(--third-color);
+  border:3px solid var(--second-color);
+  border-radius:30%;
+  margin-top:25px;
+  padding: 5px 10px;
+}
+main{
+  position:relative;
+  height:100%;
+  margin-left:80px;
+}
+#welcome-section{
+  background-image:url(https://44.media.tumblr.com/d6be74289da2ac4c2ecad9fac22ac2e3/tumblr_pnruev3of21xawcqko1_1280.gif);
+  height:100vh;
+  display:flex;
+  flex-flow:column wrap;
+  justify-content:flex-start;
+  padding:10% 15%;
+}
+#img-container{
+  position:absolute;
+  top:0;
+  left:-83;
+  width:75vw;
+  background-color:var(--main-2color);
+  height:100%;
+  transform: skew(-20deg); 
+}
+h1,h2,h3{
+  position:relative;
+  text-shadow: 3px 5px 10px var(--main-color);
+}
+h1{
+  font-size:8vw;
+  color:var(--second-color);
+}
+h2{
+  font-size:5vw;
+  color:var(--second-2color);
+}
+b{
+  color:var(--third-color);
+}
+#projects{
+  background-color:var(--second-2color);
+}
+h3{
+  text-align:center;
+  color:var(--third-color);
+  font-size:5vw;
+  padding:35px;
+}
+#projects-grid{
+  padding:20px;
+  background-color:var(--second-2color);
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:20px;
+  grid-auto-rows:minmax(250px,1fr);
+  justify-content:center;
+}
+.project-tile{
+  display:flex;
+  flex-direction:column;
+  background-color:var(--main-2color);
+  border-radius:20px;
+  justify-content:center;
+  align-items:center;
+}
+#project-link{
+  text-align:center;
+  color:var(--main-2color);
+  background-color:var(--main-color);
+  border-radius:10px;
+  padding:15px;
+  margin:20px 30px;
+}
+#project-link:hover{
+  color:var(--third-color);
+  background-color:var(--second-color);
+  border-radius:10px;
+  padding:15px;
+  margin:20px 30px;
+  transition-property:background-color;
+  transition-duration:0.25s;
+}
+.material-symbols-outlined{
+  font-size:100px;
+  color:var(--main-color);
+}
+#Contact{
+  display:flex;
+  background-color:var(--main-color);
+  justify-content:center;
+  align-items:center;
+}
+#profile-link{
+  padding:40px;
+  text-align:center;
+  font-size:2rem;
+  color:var(--main-2color);
+}
+#profile-link:hover{
+  color:var(--third-color);
+  transition-property:color;
+  transition-duration:0.5s;
+}
+@media screen and (max-width:650px){
+  
+  nav{
+    position:fixed;
+    height:auto;
+    width:100%;
+    background-color:var(--main-color);
+  }
+  #navbar{
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+  }
+  ul{
+    list-style:none;
+    display:flex;
+    margin:5px;
+    transform: rotate(0deg);
+  }
+  #nav-link{
+    color:var(--main-2color);
+    padding:24px 20px;
+  }
+  #nav-link:hover{
+    color:var(--third-color);
+    border-bottom:3px solid var(--second-color);
+    transition-property:border-bottom;
+    transition-duration:0.25s;
+  }
+  #logo{
+    font-size:2em;
+    color:var(--third-color);
+    border:3px solid var(--second-color);
+    border-radius:30%;
+    margin:10px;
+    padding: 5px 10px;
+  }
+  main{
+    position:relative;
+    width:100%;
+    margin:auto;
+  }
+  #welcome-section{
+    background-image:url(https://44.media.tumblr.com/d6be74289da2ac4c2ecad9fac22ac2e3/tumblr_pnruev3of21xawcqko1_1280.gif);
+    height:100vh;
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:center;
+
+  }
+  #img-container{
+    position:absolute;
+    top:0;
+    left:-10%;
+    width:95%;
+    background-color:var(--main-2color);
+    transform: skew(-5deg); 
+  }
+
+  #projects{
+    background-color:var(--second-2color);
+  }
+  h3{
+    text-align:center;
+    color:var(--third-color);
+    font-size:5vw;
+    padding:35px;
+  }
+
+  #Contact{
+    display:flex;
+    background-color:var(--main-color);
+    justify-content:center;
+    align-items:center;
+  }
+  #profile-link{
+    padding:40px;
+    text-align:center;
+    font-size:1em;
+    color:var(--main-2color);
+  }
+}

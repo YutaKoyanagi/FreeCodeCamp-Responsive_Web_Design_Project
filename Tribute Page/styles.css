@@ -1,0 +1,85 @@
+#title{
+    font-size:4em;
+    text-align:center;
+  }
+  main{
+    margin:30px 100px;
+    padding:15px;
+    font-family:Helvetica,Arial,sans-serif;
+    display:flex;
+    flex-direction:column;
+    background-color:#E6E1E0;
+  }
+  #img-div{
+    align-self:center;
+    margin: 0px 20px;
+  }
+  #image{
+    display:block;
+    max-width:100%;
+    height:auto;
+  }
+  #img-caption{
+    margin-top:10px;
+    text-align:center;
+  }
+  #tribute-text{
+    text-align:justify;
+    margin: 0% 7%;
+  }
+  #tribute-link{
+    display:block;
+    margin:10px 0px;
+    text-align:center;
+    color:black;
+  }
+  #tribute-link:hover{
+    display:block;
+    margin:10px 0px;
+    text-align:center;
+    color:grey;
+  }
+  
+  @media screen and (max-width:650px){
+    #title{
+      font-size:2em;
+      text-align:center;
+    }
+    main{
+    margin:25px;
+    padding:15px;
+    font-family:Helvetica,Arial,sans-serif;
+    display:flex;
+    flex-direction:column;
+    background-color:#E6E1E0;
+  }
+    #img-div{
+      align-self:center;
+      margin: 0px 20px;
+    }
+    #image{
+      display:block;
+      max-width:100%;
+      height:auto;
+    }
+    #img-caption{
+      margin-top:10px;
+      text-align:center;
+    }
+    #tribute-text{
+      text-align:justify;
+      margin: 0% 5%;
+    }
+    #tribute-link{
+      display:block;
+      margin:10px 0px;
+      text-align:center;
+      color:black;
+    }
+    #tribute-link:hover{
+      display:block;
+      margin:10px 0px;
+      text-align:center;
+      color:grey;
+    }
+  }

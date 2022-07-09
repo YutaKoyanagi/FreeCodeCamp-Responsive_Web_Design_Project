@@ -1,0 +1,135 @@
+body{
+    background-color:#FFC300;
+  }
+  main{
+    margin:auto;
+    border-radius:3%;
+    border:5px solid #581845;
+    background-color:#FF5733;
+    font-family:Helvetica,arial,sans-serif;
+    color:#C70039;
+    display:block;
+  }
+  #title{
+    color:#581845;
+    text-align:center;
+    font-size:2rem;
+  }
+  #description{
+    margin:0% 3%;
+  }
+  p{
+    color:#900C3F;
+    text-align:center;
+    font-size:1.2rem;
+  }
+  #survey-form{
+    padding:15px;
+    display:flex;
+    flex-direction:column;
+    border-radius:3%;
+    border:3px dashed #581845;
+    margin:3% 3%;
+  }
+  input,select,textarea{
+    border-radius:8px;
+    border:2px solid #FFC300;
+    background-color:#DAF7A6;
+  }
+  #radio-container{
+    display:flex;
+    justify-content:space-around;
+  }
+  #checkbox-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:start;
+  }
+  button:hover{
+    padding:5px;
+    display:block;
+    color:#581845;
+    margin:20px 70px 5px 70px;
+    border-radius:8px;
+    border:2px solid #581845;
+    background-color:#900C3F;
+  }
+  button{
+    padding:5px;
+    display:block;
+    color:#900C3F;
+    margin:20px 70px 5px 70px;
+    border-radius:8px;
+    border:2px solid #581845;
+    background-color:#581845;
+  }
+  @media screen and (min-width:550px){
+    body{
+      background-color:#FFC300;
+      margin:auto;
+    }
+    main{
+      margin-top:20px;
+      margin-bottom:20px;
+      max-width:500px;
+      border-radius:3%;
+      border:5px solid #581845;
+      background-color:#FF5733;
+      font-family:Helvetica,arial,sans-serif;
+      color:#C70039;
+      display:block;
+    }
+    #title{
+      color:#581845;
+      text-align:center;
+      font-size:2rem;
+    }
+    #description{
+      margin:0% 3%;
+    }
+    p{
+      color:#900C3F;
+      text-align:center;
+      font-size:1.2rem;
+    }
+    #survey-form{
+      padding:15px;
+      display:flex;
+      flex-direction:column;
+      border-radius:3%;
+      border:3px dashed #581845;
+      margin:3% 3%;
+    }
+    input,select,textarea{
+      border-radius:8px;
+      border:2px solid #FFC300;
+      background-color:#DAF7A6;
+    }
+    #radio-container{
+      display:flex;
+      justify-content:space-around;
+    }
+    #checkbox-container{
+      display:flex;
+      flex-direction:column;
+      justify-content:start;
+    }
+    button:hover{
+      padding:5px;
+      display:block;
+      color:#581845;
+      margin:20px 70px 5px 70px;
+      border-radius:8px;
+      border:2px solid #581845;
+      background-color:#900C3F;
+    }
+    button{
+      padding:5px;
+      display:block;
+      color:#900C3F;
+      margin:20px 70px 5px 70px;
+      border-radius:8px;
+      border:2px solid #581845;
+      background-color:#581845;
+    }
+  }
